@@ -1,12 +1,13 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: rgb(18, 50, 99);
+  background: #123263;
   color: white;
 }
 
@@ -18,9 +19,9 @@ h1 {
 .jokes {
   width: 80%;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.5);
 }
 
 .joke:not(:last-child) {
   margin-bottom: 20px;
 }
+/*# sourceMappingURL=main.css.map */
