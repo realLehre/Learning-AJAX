@@ -19,9 +19,10 @@ h1 {
 .jokes {
   width: 80%;
   margin: 0 auto;
+  border: 1px solid white;
 }
 
-.joke:not(:last-child) {
+.jokes .joke:not(:last-child) {
   margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
