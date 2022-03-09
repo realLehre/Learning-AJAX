@@ -39,5 +39,7 @@ h1 {
 .jokes .joke .index {
   position: absolute;
   background: #123263;
+  border-radius: 50%;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
