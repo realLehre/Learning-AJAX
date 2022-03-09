@@ -32,6 +32,6 @@ h1 {
 }
 
 .jokes .joke:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=main.css.map */
