@@ -28,6 +28,7 @@ form input {
 }
 
 form button {
+  margin-left: 10px;
   padding: 5px;
   cursor: pointer;
 }
