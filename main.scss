@@ -16,12 +16,17 @@ h1 {
 }
 
 form {
-  width: 90%;
+  width: 70%;
   max-width: 700px;
   margin: 0 auto;
   & input {
     width: auto;
     padding: 5px;
+  }
+
+  & button {
+    padding: 5px;
+    cursor: pointer;
   }
 }
 
