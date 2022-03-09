@@ -23,6 +23,7 @@ h1 {
 }
 
 .jokes .joke {
+  position: relative;
   font-style: italic;
   font-weight: 500;
   color: #123263;
@@ -37,5 +38,6 @@ h1 {
 
 .jokes .joke .index {
   position: absolute;
+  background: #123263;
 }
 /*# sourceMappingURL=main.css.map */
