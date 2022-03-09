@@ -13,19 +13,19 @@ body {
 
 h1 {
   text-align: center;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 .jokes {
   width: 90%;
   margin: 0 auto;
-  border: 1px solid white;
   padding: 30px 20px;
 }
 
 .jokes .joke {
   background: rgba(255, 255, 255, 0.5);
   padding: 20px 15px;
+  border-radius: 10px;
 }
 
 .jokes .joke:not(:last-child) {
