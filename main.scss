@@ -18,8 +18,8 @@ h1 {
 .jokes {
   width: 80%;
   margin: 0 auto;
-}
 
-.joke:not(:last-child) {
-  margin-bottom: 20px;
+  & .joke {
+    margin-bottom: 20px;
+  }
 }
