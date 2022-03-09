@@ -17,6 +17,7 @@ h1 {
 }
 
 form {
+  display: block;
   width: 70%;
   max-width: 700px;
   margin: 0 auto;
