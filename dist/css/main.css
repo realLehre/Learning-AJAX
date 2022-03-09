@@ -23,6 +23,11 @@ h1 {
   padding: 30px 20px;
 }
 
+.jokes .joke {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px 15px;
+}
+
 .jokes .joke:not(:last-child) {
   margin-bottom: 20px;
 }
