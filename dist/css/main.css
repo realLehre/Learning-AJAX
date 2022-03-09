@@ -41,5 +41,10 @@ h1 {
   background: #123263;
   border-radius: 50%;
   color: white;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  top: 0;
 }
 /*# sourceMappingURL=main.css.map */
