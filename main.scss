@@ -29,6 +29,10 @@ form {
       border: none;
     }
   }
+
+  @media screen and (max-width: 420px) {
+    width: 50%;
+  }
 }
 
 .jokes {
