@@ -24,11 +24,15 @@ form {
 }
 
 form input {
-  width: auto;
+  width: 50%;
   padding: 5px;
 }
 
 form button {
+  background: white;
+  border: 1px solid white;
+  color: #123263;
+  font-weight: 700;
   margin-left: 10px;
   padding: 5px;
   cursor: pointer;

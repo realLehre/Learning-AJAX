@@ -21,11 +21,15 @@ form {
   max-width: 700px;
   margin: 0 auto;
   & input {
-    width: auto;
+    width: 50%;
     padding: 5px;
   }
 
   & button {
+    background: white;
+    border: 1px solid white;
+    color: rgb(18, 50, 99);
+    font-weight: 700;
     margin-left: 10px;
     padding: 5px;
     cursor: pointer;
