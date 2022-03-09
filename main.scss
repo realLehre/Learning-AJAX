@@ -16,9 +16,10 @@ h1 {
 }
 
 .jokes {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   border: 1px solid white;
+  padding: 30px 20px;
 
   & .joke {
     &:not(:last-child) {
