@@ -29,7 +29,7 @@ h1 {
   color: #123263;
   background: white;
   padding: 15px 10px;
-  border-radius: 5px;
+  border-radius: 12px 5px 5px 5px;
 }
 
 .jokes .joke:not(:last-child) {
@@ -46,5 +46,6 @@ h1 {
   line-height: 20px;
   text-align: center;
   top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=main.css.map */
