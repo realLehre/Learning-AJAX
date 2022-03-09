@@ -17,25 +17,20 @@ h1 {
 }
 
 form {
-  width: 70%;
+  width: 30%;
   max-width: 700px;
   margin: 0 auto;
 }
 
 form input {
-  width: 50%;
-  padding: 5px;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
 }
 
-form button {
-  display: inline-block;
-  background: white;
-  border: 1px solid white;
-  color: #123263;
-  font-weight: 700;
-  margin-left: 10px;
-  padding: 5px;
-  cursor: pointer;
+form input:focus {
+  border: none;
 }
 
 .jokes {
