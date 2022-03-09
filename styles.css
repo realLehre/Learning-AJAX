@@ -6,11 +6,11 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: rgb(30, 65, 105);
+  background: rgb(18, 50, 99);
+  color: white;
 }
 
 h1 {
   text-align: center;
   margin: 50px 0;
-  color: blue;
 }
