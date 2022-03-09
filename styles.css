@@ -18,4 +18,5 @@ h1 {
 .jokes {
   width: 80%;
   margin: 0 auto;
+  background: rgba(255, 255, 255);
 }
