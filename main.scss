@@ -21,7 +21,10 @@ h1 {
   padding: 30px 20px;
 
   & .joke {
-    background: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+    font-weight: 500;
+    color: rgb(18, 50, 99);
+    background: rgba(255, 255, 255, 1);
     padding: 20px 15px;
     border-radius: 10px;
     &:not(:last-child) {
