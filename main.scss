@@ -30,5 +30,9 @@ h1 {
     &:not(:last-child) {
       margin-bottom: 15px;
     }
+
+    & .index {
+      position: absolute;
+    }
   }
 }

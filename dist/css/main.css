@@ -34,4 +34,8 @@ h1 {
 .jokes .joke:not(:last-child) {
   margin-bottom: 15px;
 }
+
+.jokes .joke .index {
+  position: absolute;
+}
 /*# sourceMappingURL=main.css.map */
