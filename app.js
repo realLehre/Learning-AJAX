@@ -11,6 +11,10 @@ function fire(e){
 
     xhr.open('GET', `http://api.icndb.com/jokes/random/${value}`, true);
 
+    xhr.onprogress = function(){
+        console.log('progress...');
+    }
+
     xhr.onload = function(){
         if(this.status === 200){
             const text = JSON.parse(this.responseText);
