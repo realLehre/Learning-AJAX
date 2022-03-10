@@ -9,7 +9,7 @@ function fire(e){
 
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', 'random.json', true);
+    xhr.open('GET', `http://api.icndb.com/jokes/random/${value}`, true);
 
     xhr.onload = function(){
         if(this.status === 200){
