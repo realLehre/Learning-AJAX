@@ -4,7 +4,8 @@ const form = document.getElementById('form');
 form.addEventListener('submit', fire)
 
 function fire(e){
-    const value = document.getElementById('input').value;
+    let input = document.getElementById('input');
+    value = input.value;
 
     const xhr = new XMLHttpRequest();
 
@@ -18,15 +19,16 @@ function fire(e){
             
             text.forEach(function(joke, index){
                 ui += `<div class="joke">
-                        <div class="index">${index}</div>
-                        ${joke}
+                        <div class="index">${index + 1}</div>
+                        ${joke.text}
                         </div> `
-                        console.log(joke);
+                document.querySelector('.jokes').innerHTML = ui;
             })
         }
     }
 
     xhr.send();
 
+    value = "";
     e.preventDefault();
 }
