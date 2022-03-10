@@ -11,21 +11,25 @@ function fire(e){
 
     xhr.open('GET', `http://api.icndb.com/jokes/random/${value}`, true);
 
-    xhr.onload = function(){
-        if(this.status === 200){
-            const text = JSON.parse(this.responseText);
+    // xhr.onload = function(){
+    //     if(this.status === 200){
+    //         const text = JSON.parse(this.responseText);
 
-            ui = "";
+    //         ui = "";
 
-            text.value.forEach(function(joke, index){
-                ui += `<div class="joke">
-                        <div class="index">${index + 1}</div>
-                        ${joke.joke}
-                        </div>`
-            })
+    //         text.value.forEach(function(joke, index){
+    //             ui += `<div class="joke">
+    //                     <div class="index">${index + 1}</div>
+    //                     ${joke.joke}
+    //                     </div>`
+    //         })
             
-            document.querySelector('.jokes').innerHTML = ui;
-        }
+    //         document.querySelector('.jokes').innerHTML = ui;
+    //     }
+    // }
+
+    xhr.onreadystatechange = function(){
+        
     }
 
     xhr.send();
