@@ -18,13 +18,13 @@ function fire(e){
             ui = "";
 
             text.value.forEach(function(joke, index){
-                ui =+ `<div class="joke">
-                        <div class="index">1</div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sunt
-                        architecto placeat praesentium explicabo cumque facere cum eum aliquam
-                        repellendus.
+                ui += `<div class="joke">
+                        <div class="index">${index + 1}</div>
+                        ${joke.joke}
                         </div>`
             })
+            
+            document.querySelector('.jokes').innerHTML = ui;
         }
     }
 
