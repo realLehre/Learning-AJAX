@@ -11,8 +11,18 @@ function fire(e){
     xhr.open('GET', 'random.json', true);
 
     xhr.onload = function(){
-        if(this.response === 200){
-            console.log(this.response);
+        if(this.status === 200){
+            const text = JSON.parse(this.responseText);
+
+            let ui = '';
+            
+            text.forEach(function(joke, index){
+                ui += `<div class="joke">
+                        <div class="index">${index}</div>
+                        ${joke}
+                        </div> `
+                        console.log(joke);
+            })
         }
     }
 
