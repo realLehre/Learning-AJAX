@@ -67,7 +67,7 @@ form input:focus {
 .jokes .joke .index {
   position: absolute;
   background: #123263;
-  border-radius: 30px;
+  border-radius: 14px 0px 0px 0px;
   color: white;
   padding: 2px 5px;
   text-align: center;
