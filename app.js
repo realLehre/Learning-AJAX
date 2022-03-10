@@ -28,23 +28,22 @@ function fire(e){
     //     }
     // }
 
-    xhr.onreadystatechange = function(){
-        if(this.status === 200 && this.readyState === 4){
-            console.log(1);
-            const text = JSON.parse(this.responseText);
+    // xhr.onreadystatechange = function(){
+    //     if(this.status === 200 && this.readyState === 4){
+    //         const text = JSON.parse(this.responseText);
 
-            ui = "";
+    //         ui = "";
 
-            text.value.forEach(function(joke, index){
-                ui += `<div class="joke">
-                        <div class="index">${index + 1}</div>
-                        ${joke.joke}
-                        </div>`
-            })
+    //         text.value.forEach(function(joke, index){
+    //             ui += `<div class="joke">
+    //                     <div class="index">${index + 1}</div>
+    //                     ${joke.joke}
+    //                     </div>`
+    //         })
             
-            document.querySelector('.jokes').innerHTML = ui;
-        }
-    }
+    //         document.querySelector('.jokes').innerHTML = ui;
+    //     }
+    // }
 
     xhr.send();
 
