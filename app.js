@@ -15,14 +15,15 @@ function fire(e){
         if(this.status === 200){
             const text = JSON.parse(this.responseText);
 
-            let ui = '';
-            
-            text.forEach(function(joke, index){
-                ui += `<div class="joke">
-                        <div class="index">${index + 1}</div>
-                        ${joke.text}
-                        </div> `
-                document.querySelector('.jokes').innerHTML = ui;
+            ui = "";
+
+            text.value.forEach(function(joke, index){
+                ui =+ `<div class="joke">
+                        <div class="index">1</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sunt
+                        architecto placeat praesentium explicabo cumque facere cum eum aliquam
+                        repellendus.
+                        </div>`
             })
         }
     }
