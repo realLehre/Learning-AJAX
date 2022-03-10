@@ -68,6 +68,7 @@ form input:focus {
   position: absolute;
   background: #123263;
   color: white;
+  padding: 2px 5px;
   text-align: center;
   top: 0;
   left: 0;
