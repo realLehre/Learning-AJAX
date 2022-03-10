@@ -29,7 +29,9 @@ function fire(e){
     // }
 
     xhr.onreadystatechange = function(){
-        
+        if(this.status === 200 && this.readyState === 4){
+            console.log(1);
+        }
     }
 
     xhr.send();
