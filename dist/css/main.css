@@ -65,6 +65,7 @@ form input:focus {
 }
 
 .jokes .joke .index {
+  font-size: 10px;
   position: absolute;
   background: #123263;
   border-radius: 12px 0px 0px 0px;
