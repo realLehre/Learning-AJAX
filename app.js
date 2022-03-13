@@ -85,6 +85,8 @@ function getUser() {
         users.forEach(function(user){
             output += `<li>${user.position}</li>`
         })
+
+        document.body.innerHTML = output;
     }, 1000)
 }
 
