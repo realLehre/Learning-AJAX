@@ -81,6 +81,9 @@ function createUser(user) {
 function getUser() {
     setTimeout(function(){
         let output = '';
-        output += `<li></li>`
+
+        users.forEach(function(user){
+
+        })
     }, 1000)
 }
