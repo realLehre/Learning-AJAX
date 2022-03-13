@@ -76,7 +76,7 @@ function createUser(user, cb) {
     setTimeout(function(){
         users.push(user);
         cb();
-    }, 2500) 
+    }, 1500) 
 }
 
 function getUser() {
@@ -84,7 +84,7 @@ function getUser() {
         let output = '';
 
         users.forEach(function(user){
-            output += `<li>Name: ${user.name}, Postion: ${user.name}</li>`
+            output += `<li>Name: ${user.name}, Postion: ${user.position}</li>`
         })
 
         document.body.innerHTML = output;
