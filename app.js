@@ -87,7 +87,7 @@ function getUser() {
         })
 
         document.body.innerHTML = output;
-    }, 1000)
+    }, 3000)
 }
 
 createUser({id: 4, name: 'Christine Kate', position: 'Human resources'});
