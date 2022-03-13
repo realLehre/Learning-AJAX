@@ -80,6 +80,6 @@ function createUser(user) {
 
 function getUser() {
     setTimeout(function(){
-        
-    })
+
+    }, 1000)
 }
