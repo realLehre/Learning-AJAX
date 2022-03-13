@@ -92,4 +92,4 @@ function getUser() {
 
 createUser({id: 4, name: 'Christine Kate', position: 'Human resources'});
 
-getUser();
+// getUser();
