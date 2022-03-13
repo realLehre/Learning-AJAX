@@ -15,25 +15,8 @@ function fire(e){
         console.log('progress...');
     }
 
-    xhr.onload = function(){
-        if(this.status === 200){
-            const text = JSON.parse(this.responseText);
-
-            ui = "";
-
-            text.value.forEach(function(joke, index){
-                ui += `<div class="joke">
-                        <div class="index">${index + 1}</div>
-                        ${joke.joke}
-                        </div>`
-            })
-            
-            document.querySelector('.jokes').innerHTML = ui;
-        }
-    }
-
-    // xhr.onreadystatechange = function(){
-    //     if(this.status === 200 && this.readyState === 4){
+    // xhr.onload = function(){
+    //     if(this.status === 200){
     //         const text = JSON.parse(this.responseText);
 
     //         ui = "";
@@ -48,6 +31,23 @@ function fire(e){
     //         document.querySelector('.jokes').innerHTML = ui;
     //     }
     // }
+
+    xhr.onreadystatechange = function(){
+        if(this.status === 200 && this.readyState === 4){
+            const text = JSON.parse(this.responseText);
+
+            ui = "";
+
+            text.value.forEach(function(joke, index){
+                ui += `<div class="joke">
+                        <div class="index">${index + 1}</div>
+                        ${joke.joke}
+                        </div>`
+            })
+            
+            document.querySelector('.jokes').innerHTML = ui;
+        }
+    }
 
     xhr.send();
 
