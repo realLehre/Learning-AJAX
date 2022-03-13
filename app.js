@@ -1,55 +1,55 @@
-const form = document.getElementById('form');
+// const form = document.getElementById('form');
 
 
-form.addEventListener('submit', fire)
+// form.addEventListener('submit', fire)
 
-function fire(e){
-    let input = document.getElementById('input');
-    value = input.value;
+// function fire(e){
+//     let input = document.getElementById('input');
+//     value = input.value;
 
-    const xhr = new XMLHttpRequest();
+//     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', `http://api.icndb.com/jokes/random/${value}`, true);
+//     xhr.open('GET', `http://api.icndb.com/jokes/random/${value}`, true);
 
-    xhr.onprogress = function(){
-        console.log('progress...');
-    }
+//     xhr.onprogress = function(){
+//         console.log('progress...');
+//     }
 
-    xhr.onload = function(){
-        if(this.status === 200){
-            const text = JSON.parse(this.responseText);
+//     xhr.onload = function(){
+//         if(this.status === 200){
+//             const text = JSON.parse(this.responseText);
 
-            ui = "";
+//             ui = "";
 
-            text.value.forEach(function(joke, index){
-                ui += `<div class="joke">
-                        <div class="index">${index + 1}</div>
-                        ${joke.joke}
-                        </div>`
-            })
+//             text.value.forEach(function(joke, index){
+//                 ui += `<div class="joke">
+//                         <div class="index">${index + 1}</div>
+//                         ${joke.joke}
+//                         </div>`
+//             })
             
-            document.querySelector('.jokes').innerHTML = ui;
-        }
-    }
+//             document.querySelector('.jokes').innerHTML = ui;
+//         }
+//     }
 
-    xhr.onreadystatechange = function(){
-        if(this.status === 200 && this.readyState === 4){
-            const text = JSON.parse(this.responseText);
+//     xhr.onreadystatechange = function(){
+//         if(this.status === 200 && this.readyState === 4){
+//             const text = JSON.parse(this.responseText);
 
-            ui = "";
+//             ui = "";
 
-            text.value.forEach(function(joke, index){
-                ui += `<div class="joke">
-                        <div class="index">${index + 1}</div>
-                        ${joke.joke}
-                        </div>`
-            })
+//             text.value.forEach(function(joke, index){
+//                 ui += `<div class="joke">
+//                         <div class="index">${index + 1}</div>
+//                         ${joke.joke}
+//                         </div>`
+//             })
             
-            document.querySelector('.jokes').innerHTML = ui;
-        }
-    }
+//             document.querySelector('.jokes').innerHTML = ui;
+//         }
+//     }
 
-    xhr.send();
+//     xhr.send();
 
-    e.preventDefault();
-}
+//     e.preventDefault();
+// }
