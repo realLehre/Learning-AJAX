@@ -83,7 +83,7 @@ function getUser() {
         let output = '';
 
         users.forEach(function(user){
-            output += ``
+            output += `<li></li>`
         })
     }, 1000)
 }
