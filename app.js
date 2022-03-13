@@ -51,6 +51,5 @@ function fire(e){
 
     xhr.send();
 
-    value = "";
     e.preventDefault();
 }
