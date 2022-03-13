@@ -74,6 +74,6 @@ const users = [
 
 function createUser(user) {
     setTimeout(function(){
-        
+        users.push(user);
     })
 }
