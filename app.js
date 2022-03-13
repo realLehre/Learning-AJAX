@@ -81,6 +81,6 @@ function createUser(user) {
 function getUser() {
     setTimeout(function(){
         let output = '';
-        output += ``
+        output += `<li></li>`
     }, 1000)
 }
