@@ -72,10 +72,11 @@ const users = [
     }
 ]
 
-function createUser(user) {
+function createUser(user, cb) {
     setTimeout(function(){
         users.push(user);
     }, 2500)
+    getUser();
 }
 
 function getUser() {
@@ -87,7 +88,7 @@ function getUser() {
         })
 
         document.body.innerHTML = output;
-    }, 3000)
+    }, 1000)
 }
 
 createUser({id: 4, name: 'Christine Kate', position: 'Human resources'});
