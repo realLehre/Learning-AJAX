@@ -53,3 +53,25 @@
 
 //     e.preventDefault();
 // }
+
+const users = [
+    {
+        id: 1,
+        name: 'Mike Smith',
+        position: 'General manager'
+    },
+    {
+        id: 2,
+        name: 'Johanne Jane',
+        position: 'Sales manager'
+    },
+    {
+        id: 3,
+        name: 'Joe Kane',
+        position: 'Logistics expert'
+    }
+]
+
+function createUser(user) {
+
+}
