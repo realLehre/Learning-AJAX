@@ -92,5 +92,6 @@ function getUser() {
 }
 
 createUser({id: 4, name: 'Christine Kate', position: 'Human resources'}, getUser);
+createUser({id: 5, name: 'Alex Chambers', position: 'Chief Security Officer'}, getUser);
 
 // getUser();
