@@ -76,7 +76,6 @@ function createUser(user, cb) {
     setTimeout(function(){
         users.push(user);
     }, 2500)
-    getUser();
 }
 
 function getUser() {
