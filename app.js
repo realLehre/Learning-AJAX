@@ -54,44 +54,44 @@
 //     e.preventDefault();
 // }
 
-const users = [
-    {
-        id: 1,
-        name: 'Mike Smith',
-        position: 'General manager'
-    },
-    {
-        id: 2,
-        name: 'Johanne Jane',
-        position: 'Sales manager'
-    },
-    {
-        id: 3,
-        name: 'Joe Kane',
-        position: 'Logistics expert'
-    }
-]
+// const users = [
+//     {
+//         id: 1,
+//         name: 'Mike Smith',
+//         position: 'General manager'
+//     },
+//     {
+//         id: 2,
+//         name: 'Johanne Jane',
+//         position: 'Sales manager'
+//     },
+//     {
+//         id: 3,
+//         name: 'Joe Kane',
+//         position: 'Logistics expert'
+//     }
+// ]
 
-function createUser(user, cb) {
-    setTimeout(function(){
-        users.push(user);
-        cb();
-    }, 1500) 
-}
+// function createUser(user, cb) {
+//     setTimeout(function(){
+//         users.push(user);
+//         cb();
+//     }, 1500) 
+// }
 
-function getUser() {
-    setTimeout(function(){
-        let output = '';
+// function getUser() {
+//     setTimeout(function(){
+//         let output = '';
 
-        users.forEach(function(user){
-            output += `<li>Name: ${user.name}, Postion: ${user.position}</li>`
-        })
+//         users.forEach(function(user){
+//             output += `<li>Name: ${user.name}, Postion: ${user.position}</li>`
+//         })
 
-        document.body.innerHTML = output;
-    }, 1000)
-}
+//         document.body.innerHTML = output;
+//     }, 1000)
+// }
 
-createUser({id: 4, name: 'Christine Kate', position: 'Human resources'}, getUser);
-createUser({id: 5, name: 'Alex Chambers', position: 'Chief Security Officer'}, getUser);
+// createUser({id: 4, name: 'Christine Kate', position: 'Human resources'}, getUser);
+// createUser({id: 5, name: 'Alex Chambers', position: 'Chief Security Officer'}, getUser);
 
 // getUser();
