@@ -11,6 +11,7 @@ easyHttp.prototype.get = function(url){
         
         }
 
-        this.http.send();
+     
     }
+       this.http.send();
 }

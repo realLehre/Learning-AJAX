@@ -98,4 +98,4 @@
 
 const http = new easyHttp();
 
-http.get('wjududddjdj');
+http.get('https://jsonplaceholder.typicode.com/posts');
