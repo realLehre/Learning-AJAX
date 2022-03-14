@@ -7,11 +7,8 @@ easyHttp.prototype.get = function(url){
 
     this.http.onload = function(){
         if(this.status === 200){
-            console.log(this.responseText);
-        
-        }
-
-     
+            console.log(this.responseText);      
+        }     
     }
-       this.http.send();
+    this.http.send();
 }
