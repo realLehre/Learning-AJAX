@@ -9,8 +9,8 @@ easyHttp.prototype.get = function(url){
         if(this.status === 200){
             console.log(this.responseText);
         
-    }
+        }
 
-    this.http.send();
-}
+        this.http.send();
+    }
 }
