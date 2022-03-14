@@ -5,18 +5,13 @@ function easyHttp(){
 easyHttp.prototype.get = function(url, callback){
     this.http.open('GET', url, true);
 
-    const self = this;
+    // const self = this;
 
     this.http.onload = function(){
-        if(self.status === 200){
-            callback(self.responseText);      
+        if(this.status === 200){
+            callback(this.responseText);      
         }     
     }
-    // this.http.onload = function(){
-    //     if(this.status === 200){
-    //         callback(this.responseText);      
-    //     }     
-    // }
 
     this.http.send();
 }
