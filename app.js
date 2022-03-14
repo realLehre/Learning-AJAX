@@ -98,7 +98,7 @@
 
 const http = new easyHttp();
 
-http.get('https://jsonplaceholder.typicode.com/posts', function(err, response){
+http.get('https://jsonplaceholder.typicode.com/post1s', function(err, response){
     if(err){
         console.log(response);
     } else {
