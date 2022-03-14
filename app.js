@@ -96,3 +96,6 @@
 
 // getUser();
 
+const http = new easyHttp();
+
+http.get('wjududddjdj');
