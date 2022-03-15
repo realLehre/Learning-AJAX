@@ -115,3 +115,7 @@ const http = new easyHttp();
 //         console.log(response);
 //     }
 // });
+
+const data = {
+    
+}
