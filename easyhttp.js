@@ -35,6 +35,8 @@ easyHttp.prototype.put = function(url, data, callback){
 
     const self = this;
     this.http.onload = function(){
-        
+        callback(null, self.http.responseText);
     }
+
+    this.http.send(JSON.stringify(data));
 }
