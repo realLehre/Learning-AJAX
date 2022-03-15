@@ -124,5 +124,7 @@ const data = {
 http.post('https://jsonplaceholder.typicode.com/posts', data, function(err, response){
     if(err){
         console.log(err);
+    } else {
+        console.log(response);
     }
 })
