@@ -14,10 +14,8 @@ easyHttp.prototype.get = function(url, callback){
             callback('Error: ' + self.http.status)
         }      
     }
-
     this.http.send();
 }
 
 easyHttp.prototype.post = function() {
-
 }
