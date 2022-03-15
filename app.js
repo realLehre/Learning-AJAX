@@ -105,3 +105,5 @@ http.get('https://jsonplaceholder.typicode.com/posts', function(error, response)
         console.log(response);
     }    
 });
+
+http.get();
