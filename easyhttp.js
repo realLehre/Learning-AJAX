@@ -20,5 +20,7 @@ easyHttp.prototype.get = function(url, callback){
 easyHttp.prototype.post = function(url, data, callback) {
     this.http.open('POST', url, true);
 
+    this.http.setRequestHeader('Content-type')
+
     this.http.send(data);
 }
