@@ -19,9 +19,9 @@ easyHttp.prototype.get = function(url, callback){
 
 easyHttp.prototype.post = function(url, data, callback) {
     this.http.open('POST', url, true);
-
     this.http.setRequestHeader('Content-type', 'application/json')
 
+    const self = this;
     this.http.open = function(){
         callback(null, self.http.responseText);
     }
