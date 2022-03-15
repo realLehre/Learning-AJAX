@@ -41,3 +41,7 @@ easyHttp.prototype.put = function(url, data, callback){
 
     this.http.send(JSON.stringify(data));
 }
+
+easyHttp.prototype.delete = function(url, data, callback){
+    
+}
