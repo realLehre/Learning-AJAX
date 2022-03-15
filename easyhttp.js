@@ -17,5 +17,6 @@ easyHttp.prototype.get = function(url, callback){
     this.http.send();
 }
 
-easyHttp.prototype.post = function() {
+easyHttp.prototype.post = function(url, data, callback) {
+    this.http.open('POST', url, true);
 }
