@@ -98,6 +98,7 @@
 
 const http = new easyHttp();
 
+// get posts
 http.get('https://jsonplaceholder.typicode.com/posts', function(error, response){
     if(error){
         console.log(error);
@@ -106,6 +107,7 @@ http.get('https://jsonplaceholder.typicode.com/posts', function(error, response)
     }    
 });
 
+// get single post
 http.get('https://jsonplaceholder.typicode.com/posts/100', function(error, response){
     if(error){
         console.log(error);
