@@ -106,4 +106,4 @@ http.get('https://jsonplaceholder.typicode.com/posts', function(error, response)
     }    
 });
 
-http.get();
+http.get('https://jsonplaceholder.typicode.com/posts');
