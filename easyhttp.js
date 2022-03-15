@@ -34,4 +34,7 @@ easyHttp.prototype.put = function(url, data, callback){
     this.http.open('PUT', url, true);
 
     const self = this;
+    this.http.onload = function(){
+        
+    }
 }
