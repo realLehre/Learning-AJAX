@@ -128,5 +128,3 @@ http.post('https://jsonplaceholder.typicode.com/posts', data, function(err, resp
         console.log(response);
     }
 })
-
-http.send();
