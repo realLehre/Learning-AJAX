@@ -43,7 +43,7 @@ easyHttp.prototype.put = function(url, data, callback){
 }
 
 easyHttp.prototype.delete = function(url, data, callback){
-    this.http.open('PUT', url, true);
+    this.http.open('DELETE', url, true);
     this.http.setRequestHeader('Content-type', 'application/json')
 
     const self = this;
