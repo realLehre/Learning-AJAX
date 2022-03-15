@@ -120,3 +120,5 @@ const data = {
     'title': 'A custom post',
     'body': 'This is a custom post with custom text'
 }
+
+http.post('https://jsonplaceholder.typicode.com/posts')
