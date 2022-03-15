@@ -108,23 +108,27 @@ const http = new easyHttp();
 // });
 
 // get single post
-http.get('https://jsonplaceholder.typicode.com/posts/100', function(error, response){
-    if(error){
-        console.log(error);
-    } else {
-        console.log(response);
-    }
-});
+// http.get('https://jsonplaceholder.typicode.com/posts/100', function(error, response){
+//     if(error){
+//         console.log(error);
+//     } else {
+//         console.log(response);
+//     }
+// });
 
 const data = {
     'title': 'A custom post',
     'body': 'This is a custom post with custom text'
 }
 
-http.post('https://jsonplaceholder.typicode.com/posts', data, function(err, response){
-    if(err){
-        console.log(err);
-    } else {
-        console.log(response);
-    }
+// http.post('https://jsonplaceholder.typicode.com/posts', data, function(err, response){
+//     if(err){
+//         console.log(err);
+//     } else {
+//         console.log(response);
+//     }
+// })
+
+http.put('https://jsonplaceholder.typicode.com/posts/1', data, function(err, response){
+    
 })
