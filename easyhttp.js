@@ -22,7 +22,8 @@ easyHttp.prototype.post = function(url, data, callback) {
     this.http.setRequestHeader('Content-type', 'application/json')
 
     const self = this;
-    this.http.open = function(){
+
+    this.http.onload = function(){
         callback(null, self.http.responseText);
     }
 
