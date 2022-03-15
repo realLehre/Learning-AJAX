@@ -1,4 +1,4 @@
-function easyHttp(){
+function easyHttps(){
     this.http = new XMLHttpRequest();
 }
 
