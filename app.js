@@ -121,4 +121,6 @@ const data = {
     'body': 'This is a custom post with custom text'
 }
 
-http.post('https://jsonplaceholder.typicode.com/posts')
+http.post('https://jsonplaceholder.typicode.com/posts', data, function(err, response){
+    
+})
