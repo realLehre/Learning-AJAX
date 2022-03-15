@@ -117,5 +117,6 @@ http.get('https://jsonplaceholder.typicode.com/posts/100', function(error, respo
 });
 
 const data = {
-
+    'title': 'A custom text',
+    'body': ''
 }
