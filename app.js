@@ -107,15 +107,15 @@ const http = new easyHttp();
 //     }    
 // });
 
-// // get single post
-// http.get('https://jsonplaceholder.typicode.com/posts/100', function(error, response){
-//     if(error){
-//         console.log(error);
-//     } else {
-//         console.log(response);
-//     }
-// });
+// get single post
+http.get('https://jsonplaceholder.typicode.com/posts/100', function(error, response){
+    if(error){
+        console.log(error);
+    } else {
+        console.log(response);
+    }
+});
 
 const data = {
-    
+
 }
