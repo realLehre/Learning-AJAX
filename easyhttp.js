@@ -32,4 +32,6 @@ easyHttp.prototype.post = function(url, data, callback) {
 
 easyHttp.prototype.put = function(url, data, callback){
     this.http.open('PUT', url, true);
+
+    const self = this;
 }
