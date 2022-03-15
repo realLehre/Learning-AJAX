@@ -130,5 +130,9 @@ const data = {
 // })
 
 http.put('https://jsonplaceholder.typicode.com/posts/1', data, function(err, response){
-    
+    if(err){
+        console.log(err);
+    } else {
+        console.log(response);
+    }
 })
