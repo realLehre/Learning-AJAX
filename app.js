@@ -150,3 +150,7 @@ xhr.onload = function(){
 }
 
 xhr.send();
+
+const post = {
+    
+}
