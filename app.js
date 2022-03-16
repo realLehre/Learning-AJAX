@@ -137,4 +137,4 @@
 //     }
 // })
 
-const xhr
+const xhr = new XMLHttpRequest();
