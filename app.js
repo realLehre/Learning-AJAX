@@ -150,7 +150,7 @@ xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/1', true);
 
 xhr.open('PUT', 'https://jsonplaceholder.typicode.com/posts/1', true)
 
-xhr.setRequestHeader('')
+xhr.setRequestHeader('Content')
 
 xhr.onload = function(data){
     if(this.status === 200){
