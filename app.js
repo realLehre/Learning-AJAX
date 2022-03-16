@@ -137,13 +137,18 @@
 //     }
 // })
 
+const post = {
+    'title': 'Custom post',
+    'body': 'This is a custom post'
+}
+
 const xhr = new XMLHttpRequest();
 
 xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
 
 xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/1', true);
 
-xhr.open('PUT', 'https//jsonplaceholder.typicode.com')
+xhr.open('PUT', 'https//jsonplaceholder.typicode.com/posts/1', true)
 
 xhr.onload = function(){
     if(this.status === 200){
@@ -151,9 +156,5 @@ xhr.onload = function(){
     }
 }
 
-xhr.send();
+xhr.send(post);
 
-const post = {
-    'title': 'Custom post',
-    'body': 'This is a custom post'
-}
