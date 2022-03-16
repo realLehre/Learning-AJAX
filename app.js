@@ -158,5 +158,5 @@ xhr.onload = function(data){
     }
 }
 
-xhr.send(post);
+xhr.send(JSON.stringify(post));
 
