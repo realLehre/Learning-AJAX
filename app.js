@@ -143,6 +143,8 @@ xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
 
 xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/1', true);
 
+xhr.open()
+
 xhr.onload = function(){
     if(this.status === 200){
         console.log(this.responseText);
