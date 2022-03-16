@@ -150,9 +150,9 @@ xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/1', true);
 
 xhr.open('PUT', 'https//jsonplaceholder.typicode.com/posts/1', true)
 
-xhr.onload = function(){
+xhr.onload = function(data){
     if(this.status === 200){
-        console.log(this.responseText);
+        console.log(data);
     }
 }
 
