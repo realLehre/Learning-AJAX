@@ -152,5 +152,6 @@ xhr.onload = function(){
 xhr.send();
 
 const post = {
-    
+    'title': 'Custom post',
+    'body': 'This is a custom post'
 }
