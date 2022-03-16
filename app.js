@@ -152,7 +152,7 @@ xhr.open('PUT', 'https://jsonplaceholder.typicode.com/posts/1', true)
 
 xhr.onload = function(data){
     if(this.status === 200){
-        console.log(data);
+        console.log(this.responseText);
     }
 }
 
