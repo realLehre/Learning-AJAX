@@ -180,6 +180,9 @@ function createUser(user){
         setTimeout(function(){
 
         users.push(user);
+
+        let error = true;
+
         resolve();
 
         }, 1500)
