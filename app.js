@@ -196,5 +196,5 @@ function getUser(){
 
 createUser({'id': 4, 'name': 'New User'}, getUser);
 
-// getUser();
+getUser();
 
