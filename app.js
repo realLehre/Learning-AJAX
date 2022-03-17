@@ -181,8 +181,9 @@ function getJson(){
         .then(function(data){
             let output = "";
             data.forEach(function(item){
-                output += `<li>${item.id}, ${item.body}</li>`
+                output += `<li>${item.id}, ${item.body}</li>`;
             })
+            document.body.innerHTML = output;
         })
         .catch(function(err){
             console.log(err);
