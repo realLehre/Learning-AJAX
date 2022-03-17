@@ -137,26 +137,47 @@
 //     }
 // })
 
-const post = {
-    'title': 'Custom post',
-    'body': 'This is a custom post'
-}
+// const post = {
+//     'title': 'Custom post',
+//     'body': 'This is a custom post'
+// }
 
-const xhr = new XMLHttpRequest();
+// const xhr = new XMLHttpRequest();
 
-xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+// xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
 
-xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/1', true);
+// xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/1', true);
 
-xhr.open('PUT', 'https://jsonplaceholder.typicode.com/posts/1', true)
+// xhr.open('PUT', 'https://jsonplaceholder.typicode.com/posts/1', true)
 
-xhr.setRequestHeader('Content-type', 'application/json');
+// xhr.setRequestHeader('Content-type', 'application/json');
 
-xhr.onload = function(data){
-    if(this.status === 200){
-        console.log(this.responseText);
+// xhr.onload = function(data){
+//     if(this.status === 200){
+//         console.log(this.responseText);
+//     }
+// }
+
+// xhr.send(JSON.stringify(post));
+
+const users = [
+    {
+        'id': 1,
+        'name': 'Peter Parker'
+    },
+    {
+        'id': 2,
+        'name': 'Jane Christy'
+    },
+    {
+        'id': 3,
+        'name': 'Adam Eve'
     }
-}
+]
 
-xhr.send(JSON.stringify(post));
+function createUser(user){
+    setTimeout(function(){
+        users.push(user)
+    }, 1500)
+}
 
