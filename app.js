@@ -182,6 +182,9 @@ function createUser(user){
         users.push(user);
 
         let error = true;
+        if(error){
+            console.log('Error: something went wrong');
+        }
 
         resolve();
 
