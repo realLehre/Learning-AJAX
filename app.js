@@ -188,10 +188,12 @@ function getUser(){
             output += `<li>${user.name}</li>`
         })
         document.body.innerHTML = output;
-    }, 100)
+    }, 1000)
 }
+
+getUser();
 
 createUser({'id': 4, 'name': 'New User'});
 
-getUser();
+// getUser();
 
