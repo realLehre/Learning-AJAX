@@ -174,7 +174,7 @@ function getText(){
 }
 
 function getJson(){
-    fetch('posts.j1son')
+    fetch('posts.json')
         .then(function(res){
              return res.json();
         })
