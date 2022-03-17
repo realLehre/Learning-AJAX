@@ -160,55 +160,5 @@
 
 // xhr.send(JSON.stringify(post));
 
-const users = [
-    {
-        'id': 1,
-        'name': 'Peter Parker'
-    },
-    {
-        'id': 2,
-        'name': 'Jane Christy'
-    },
-    {
-        'id': 3,
-        'name': 'Adam Eve'
-    }
-]
-
-function createUser(user){
-    return new Promise(function (resolve, reject) {
-        setTimeout(function(){
-
-        users.push(user);
-
-        let error = true;
-        if(!error){
-            reject('Error: Something went wrong');
-        } else {
-            resolve();
-        }
-
-        
-
-        }, 1500)
-    })
-    
-}
-
-function getUser(){
-    setTimeout(function(){
-        let output = '';
-        users.forEach(function(user){
-            output += `<li>${user.name}</li>`
-        })
-        document.body.innerHTML = output;
-    }, 1000)
-}
-
-createUser({'id': 4, 'name': 'New User'})
-.then(getUser)
-.catch(function(err){
-    console.log(err);
-})
-
+document.getElementById('button1').addEventListener('click', getText);
 
