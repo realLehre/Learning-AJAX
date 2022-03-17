@@ -192,3 +192,5 @@ function getUser(){
     })
 }
 
+createUser({'id'})
+
