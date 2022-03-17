@@ -181,7 +181,7 @@ function createUser(user){
 
         users.push(user);
         resolve();
-        
+
         }, 1500)
     })
     
@@ -197,6 +197,6 @@ function getUser(){
     }, 1000)
 }
 
-createUser({'id': 4, 'name': 'New User'}, getUser);
+createUser({'id': 4, 'name': 'New User'});
 
 
