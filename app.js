@@ -192,7 +192,7 @@ function getUser(){
     }, 1000)
 }
 
-getUser();
+// getUser();
 
 createUser({'id': 4, 'name': 'New User'}, getUser);
 
