@@ -192,5 +192,5 @@ function getUser(){
     })
 }
 
-createUser({'id'})
+createUser({'id': 4, 'name'})
 
