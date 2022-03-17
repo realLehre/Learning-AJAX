@@ -185,7 +185,7 @@ function getUser(){
     setTimeout(function(){
         let output = '';
         users.forEach(function(user){
-            output += `<li></li>`
+            output += `<li>${user.name}</li>`
         })
     })
 }
