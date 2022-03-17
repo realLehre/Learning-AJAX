@@ -187,7 +187,7 @@ function getUser(){
         users.forEach(function(user){
             output += `<li>${user.name}</li>`
         })
-        document.body.innerHTML
+        document.body.innerHTML = output;
     })
 }
 
