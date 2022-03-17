@@ -179,7 +179,10 @@ function getJson(){
              return res.json();
         })
         .then(function(data){
-            console.log(data);
+            let output = "";
+            data.forEach(function(item){
+                
+            })
         })
         .catch(function(err){
             console.log(err);
