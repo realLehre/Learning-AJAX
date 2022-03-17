@@ -161,8 +161,19 @@
 // xhr.send(JSON.stringify(post));
 
 document.getElementById('button1').addEventListener('click', getText);
+document.getElementById('button2').addEventListener('click', getJson);
 
 function getText(){
+    fetch('text.txt')
+        .then(function(res){
+            return res.text();
+        })
+        .then(function(res){
+            console.log(res);
+        })
+}
+
+function getJson(){
     fetch('text.txt')
         .then(function(res){
             return res.text();
