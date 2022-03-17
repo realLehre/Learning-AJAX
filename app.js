@@ -179,8 +179,8 @@ function createUser(user){
     new Promise(function (resolve, reject) {
         setTimeout(function(){
 
-        users.push(user)
-        
+        users.push(user);
+        resolve();
         }, 1500)
     })
     
