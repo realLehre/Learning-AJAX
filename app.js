@@ -176,6 +176,7 @@ const users = [
 ]
 
 function createUser(user){
+    new Promise()
     setTimeout(function(){
         users.push(user)
     }, 1500)
