@@ -174,11 +174,14 @@ function getText(){
 }
 
 function getJson(){
-    fetch('text.txt')
+    fetch('posts.j1son')
         .then(function(res){
-            return res.text();
+             return res.json();
         })
-        .then(function(res){
-            console.log(res);
+        .then(function(data){
+            console.log(data);
+        })
+        .catch(function(err){
+            console.log(err);
         })
 }
