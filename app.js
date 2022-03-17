@@ -177,11 +177,13 @@ const users = [
 
 function createUser(user){
     new Promise(function (resolve, reject) {
+        setTimeout(function(){
 
-    })
-    setTimeout(function(){
         users.push(user)
-    }, 1500)
+        
+        }, 1500)
+    })
+    
 }
 
 function getUser(){
