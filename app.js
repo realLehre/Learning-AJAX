@@ -175,10 +175,9 @@ const users = [
     }
 ]
 
-function createUser(user, callback){
+function createUser(user){
     setTimeout(function(){
         users.push(user)
-        callback();
     }, 1500)
 }
 
@@ -192,9 +191,6 @@ function getUser(){
     }, 1000)
 }
 
-// getUser();
-
 createUser({'id': 4, 'name': 'New User'}, getUser);
 
-getUser();
 
