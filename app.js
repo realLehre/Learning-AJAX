@@ -182,7 +182,7 @@ function createUser(user){
         users.push(user);
 
         let error = true;
-        if(error){
+        if(!error){
             reject('Error: Something went wrong');
         } else {
             resolve();
