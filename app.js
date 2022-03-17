@@ -181,5 +181,7 @@ function createUser(user){
     }, 1500)
 }
 
-function getUser()
+function getUser(){
+    setTimeout()
+}
 
