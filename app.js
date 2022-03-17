@@ -178,6 +178,7 @@ const users = [
 function createUser(user){
     setTimeout(function(){
         users.push(user)
+        getUser();
     }, 1500)
 }
 
