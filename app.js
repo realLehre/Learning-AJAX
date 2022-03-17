@@ -183,7 +183,7 @@ function createUser(user){
 
         let error = true;
         if(error){
-            console.log('Error: something went wrong');
+            reject('Error: something went wrong');
         } else {
             resolve();
         }
@@ -206,7 +206,7 @@ function getUser(){
 }
 
 createUser({'id': 4, 'name': 'New User'})
-.then(getUser);
+.then(getUser)
 .catch(error)
 
 
