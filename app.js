@@ -207,8 +207,8 @@ function getUser(){
 
 createUser({'id': 4, 'name': 'New User'})
 .then(getUser)
-.catch(function(){
-    
+.catch(function(err){
+    console.log(err);
 })
 
 
