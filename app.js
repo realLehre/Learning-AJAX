@@ -197,6 +197,6 @@ function getUser(){
     }, 1000)
 }
 
-createUser({'id': 4, 'name': 'New User'});
+createUser({'id': 4, 'name': 'New User'}).then(getUser);
 
 
