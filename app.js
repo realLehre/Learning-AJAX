@@ -176,7 +176,7 @@ const users = [
 ]
 
 function createUser(user){
-    new Promise(function (resolve) {
+    new Promise(function (resolve, reject) {
 
     })
     setTimeout(function(){
