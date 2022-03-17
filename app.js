@@ -181,6 +181,7 @@ function createUser(user){
 
         users.push(user);
         resolve();
+        
         }, 1500)
     })
     
