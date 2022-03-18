@@ -207,7 +207,7 @@ function getExternal(){
 
 
             data.forEach(function(item){
-                output += `<li>`
+                output += `<li>${}</li>`
             })
 
             document.body.innerHTML = output;
