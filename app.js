@@ -193,7 +193,7 @@ function getJson(){
 document.getElementById('button3').addEventListener('click', getExternal);
 
 function getExternal(){
-    fetch('https://api.github.com/users')
+    fetch('https://api.github.com/users1')
         .then(res => {
             return res.json();
         })
