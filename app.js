@@ -205,6 +205,11 @@ function getExternal(){
                 output += `<li>${item}</li>`;
             })
 
+
+            data.forEach(function(item){
+                
+            })
+
             document.body.innerHTML = output;
         })
         .catch(err => {
