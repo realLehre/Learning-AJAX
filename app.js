@@ -201,13 +201,13 @@ function getExternal(){
         .then(function(data){
             let output = "";
 
-            data.forEach(item => {
-                output += `<li>${item}</li>`;
-            })
+            // data.forEach(item => {
+            //     output += `<li>${item}</li>`;
+            // })
 
 
             data.forEach(function(item){
-                output += `<li>${}</li>`
+                output += `<li>${item}</li>`
             })
 
             document.body.innerHTML = output;
