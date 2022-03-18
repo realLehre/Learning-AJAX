@@ -199,9 +199,11 @@ function getExternal(){
         })
         .then(function(data){
             let output = "";
-            
+
             data.forEach(item => {
                 output += `<li>${item}</li>`;
             })
+
+            document.body.innerHTML = output;
         })
 }
