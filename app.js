@@ -199,5 +199,6 @@ function getExternal(){
         })
         .then(function(data){
             let output = "";
+            data.forEach()
         })
 }
