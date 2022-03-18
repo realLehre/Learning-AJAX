@@ -197,5 +197,7 @@ function getExternal(){
         .then(function(res){
             return res.json();
         })
-        .then(function)
+        .then(function(data){
+            
+        })
 }
