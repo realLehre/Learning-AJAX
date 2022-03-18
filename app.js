@@ -201,7 +201,7 @@ function getExternal(){
             let output = "";
 
             data.forEach(item => {
-                output += `<li>${item.login}</li>`;
+                output += `<li>${item.login}, ${item.url}</li>`;
             })
 
             document.body.innerHTML = output;
