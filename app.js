@@ -198,6 +198,6 @@ function getExternal(){
             return res.json();
         })
         .then(function(data){
-            console.log(data)
+            let output = "";
         })
 }
