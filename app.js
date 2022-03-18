@@ -206,4 +206,7 @@ function getExternal(){
 
             document.body.innerHTML = output;
         })
+        .catch(err => {
+            console.log(err);
+        })
 }
