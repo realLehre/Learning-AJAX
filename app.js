@@ -195,7 +195,8 @@ document.getElementById('button3').addEventListener('click', getExternal);
 function getExternal(){
     fetch('https://api.github.com/users')
         .then(function(res){
-            return res.json();
+            // return res.json();
+            console.log(res.json())
         })
         .then(function(data){
             let output = "";
