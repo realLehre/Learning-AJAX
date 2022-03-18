@@ -200,8 +200,8 @@ function getExternal(){
         .then(function(data){
             let output = "";
 
-            data.forEach(item => {
-                output += `<li>${item.login}, ${item.url}</li>`;
+            data.forEach(user => {
+                output += `<li>${user.login}, ${user.url}</li>`;
             })
 
             document.body.innerHTML = output;
