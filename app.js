@@ -195,18 +195,17 @@ document.getElementById('button3').addEventListener('click', getExternal);
 function getExternal(){
     fetch('https://api.github.com/users')
         .then(function(res){
-            // return res.json();
-            console.log(res.json())
+            return res.json();
         })
         .then(function(data){
             let output = "";
 
-            // data.forEach(item => {
-            //     output += `<li>${item}</li>`;
-            // })
+            data.forEach(item => {
+                output += `<li>${item.login}</li>`;
+            })
 
             console.log(data);
 
-            // document.body.innerHTML = output;
+            document.body.innerHTML = output;
         })
 }
