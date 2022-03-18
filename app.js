@@ -204,8 +204,6 @@ function getExternal(){
                 output += `<li>${item.login}</li>`;
             })
 
-            console.log(data);
-
             document.body.innerHTML = output;
         })
 }
