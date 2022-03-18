@@ -205,14 +205,8 @@ function getExternal(){
             //     output += `<li>${item}</li>`;
             // })
 
+            console.log(data);
 
-            data.forEach(function(item){
-                output += `<li>${item}</li>`
-            })
-
-            document.body.innerHTML = output;
-        })
-        .catch(err => {
-            console.log(err);
+            // document.body.innerHTML = output;
         })
 }
