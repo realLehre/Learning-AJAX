@@ -221,8 +221,9 @@ function getExternal(){
     let output = "";
     http.get('https://jsonplaceholder.typicode.com/users')
         .then(data => {
+             console.log(data);
             data.forEach(user => {
-                console.log(data);
+               
             output += `<li>${user}</li>`;
         })
         })
