@@ -14,8 +14,9 @@ class easyHttp {
             fetch(url, {
                 method: 'POST',
                 headers: {
-                    Content-type: 'application/json'
-                }
+                    'Content-type': 'application/json'
+                },
+                body: data
             })
         })
     }
