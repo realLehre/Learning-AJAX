@@ -20,6 +20,7 @@ class easyHttp {
             })
                 .then(res => res.json())
                 .then(data => resolve(data))
+                .catch(err => reject(err));
         })
     }
 }
