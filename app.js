@@ -218,6 +218,7 @@ const http = new easyHttp();
 document.getElementById('button3').addEventListener('click', getExternal);
 
 function getExternal(){
+    let output = "";
     http.get('https://jsonplaceholder.typicode.com/users')
         .then(data => {
             data.forEach(user => {
@@ -225,7 +226,7 @@ function getExternal(){
         })
         })
 
-        let output = "";
+        
         // data.forEach(user => {
         //     output += `<li>${user}</li>`;
         // })
