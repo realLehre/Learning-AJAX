@@ -1,5 +1,5 @@
 class easyHttp {
-    get(){
-
+    get(url){
+        
     }
 }
