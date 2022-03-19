@@ -10,6 +10,6 @@ class easyHttp {
     }
 
     post(url, data){
-        
+        return new Promise()
     }
 }
