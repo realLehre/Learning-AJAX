@@ -16,7 +16,7 @@ class easyHttp {
                 headers: {
                     'Content-type': 'application/json'
                 },
-                body: data
+                body: JSON.stringify(data)
             })
                 .then(res => res.json())
                 .then(data => resolve(data))
