@@ -213,4 +213,11 @@
 
 const http = new easyHttp();
 
-http.get('https://jsonplaceholder.typicode.com/users');
+// http.get('https://jsonplaceholder.typicode.com/users');
+
+document.getElementById('button3').addEventListener('click', getExternal);
+
+function getExternal(){
+    http.get('https://jsonplaceholder.typicode.com/users')
+        .then(data => console.log(data))
+}
