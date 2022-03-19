@@ -231,5 +231,5 @@ function getExternal(){
         //     output += `<li>${user}</li>`;
         // })
 
-        document.body.innerHTML = output;
+       console.log(output);
 }
