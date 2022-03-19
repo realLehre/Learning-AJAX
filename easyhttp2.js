@@ -4,7 +4,7 @@ class easyHttp {
             fetch(url)
                 .then(res => res.json())
                 .then(data => resolve(data))
-                .catch(err => err);
+                .catch(err => reject(err));
         })
         
     }
