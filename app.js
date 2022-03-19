@@ -219,12 +219,16 @@ document.getElementById('button3').addEventListener('click', getExternal);
 
 function getExternal(){
     http.get('https://jsonplaceholder.typicode.com/users')
-        .then(data => data)
-
-        let output = "";
-        data.forEach(user => {
+        .then(data => {
+            data.forEach(user => {
             output += `<li>${user}</li>`;
         })
+        })
+
+        let output = "";
+        // data.forEach(user => {
+        //     output += `<li>${user}</li>`;
+        // })
 
         document.body.innerHTML = output;
 }
