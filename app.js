@@ -222,3 +222,4 @@ user = {
 }
 
 http.post('https://jsonplaceholder.typicode.com/users', user)
+    .then(data => console.log(data))
