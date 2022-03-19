@@ -214,4 +214,4 @@
 const http = new easyHttp();
 
 http.get('https://jsonplaceholder.typicode.com/users')
-    
+    .then(data => console.log(data))
