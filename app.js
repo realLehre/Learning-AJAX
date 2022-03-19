@@ -223,6 +223,8 @@ function getExternal(){
 
         let output = "";
         data.forEach(user => {
-            output += `<li></li>`
+            output += `<li>${user}</li>`;
         })
+
+        document.body.innerHTML = output;
 }
