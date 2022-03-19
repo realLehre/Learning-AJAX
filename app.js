@@ -210,3 +210,5 @@
 //             console.log(err);
 //         })
 // }
+
+const http = new easyHttp();
