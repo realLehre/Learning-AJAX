@@ -19,7 +19,7 @@ class easyHttp {
                 body: data
             })
                 .then(res => res.json())
-                .then
+                .then(data => resolve(data))
         })
     }
 }
