@@ -9,5 +9,7 @@ class easyHttp {
         
     }
 
-    post(url, data)
+    post(url, data){
+        
+    }
 }
