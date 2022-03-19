@@ -215,3 +215,5 @@ const http = new easyHttp();
 
 // http.get('https://jsonplaceholder.typicode.com/users')
 //     .then(data => console.log(data))
+
+http.post('https://jsonplaceholder.typicode.com/users/1')
