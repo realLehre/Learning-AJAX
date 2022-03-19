@@ -18,6 +18,8 @@ class easyHttp {
                 },
                 body: data
             })
+                .then(res => res.json())
+                .then
         })
     }
 }
