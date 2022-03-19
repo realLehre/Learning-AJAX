@@ -219,5 +219,10 @@ document.getElementById('button3').addEventListener('click', getExternal);
 
 function getExternal(){
     http.get('https://jsonplaceholder.typicode.com/users')
-        .then(data => console.log(data))
+        .then(data => data)
+
+        let output = "";
+        data.forEach(user => {
+
+        })
 }
