@@ -160,53 +160,53 @@
 
 // xhr.send(JSON.stringify(post));
 
-document.getElementById('button1').addEventListener('click', getText);
-document.getElementById('button2').addEventListener('click', getJson);
+// document.getElementById('button1').addEventListener('click', getText);
+// document.getElementById('button2').addEventListener('click', getJson);
 
-function getText(){
-    fetch('text.txt')
-        .then(function(res){
-            return res.text();
-        })
-        .then(function(res){
-            console.log(res);
-        })
-}
+// function getText(){
+//     fetch('text.txt')
+//         .then(function(res){
+//             return res.text();
+//         })
+//         .then(function(res){
+//             console.log(res);
+//         })
+// }
 
-function getJson(){
-    fetch('posts.json')
-        .then(function(res){
-             return res.json();
-        })
-        .then(function(data){
-            let output = "";
-            data.forEach(function(item){
-                output += `<li>${item.id}, ${item.body}</li>`;
-            })
-            document.body.innerHTML = output;
-        })
-        .catch(function(err){
-            console.log(err);
-        })
-}
+// function getJson(){
+//     fetch('posts.json')
+//         .then(function(res){
+//              return res.json();
+//         })
+//         .then(function(data){
+//             let output = "";
+//             data.forEach(function(item){
+//                 output += `<li>${item.id}, ${item.body}</li>`;
+//             })
+//             document.body.innerHTML = output;
+//         })
+//         .catch(function(err){
+//             console.log(err);
+//         })
+// }
 
-document.getElementById('button3').addEventListener('click', getExternal);
+// document.getElementById('button3').addEventListener('click', getExternal);
 
-function getExternal(){
-    fetch('https://api.github.com/users')
-        .then(res => {
-            return res.json();
-        })
-        .then(function(data){
-            let output = "";
+// function getExternal(){
+//     fetch('https://api.github.com/users')
+//         .then(res => {
+//             return res.json();
+//         })
+//         .then(function(data){
+//             let output = "";
 
-            data.forEach(user => {
-                output += `<li>${user.login}, ${user.url}</li>`;
-            })
+//             data.forEach(user => {
+//                 output += `<li>${user.login}, ${user.url}</li>`;
+//             })
 
-            document.body.innerHTML = output;
-        })
-        .catch(err => {
-            console.log(err);
-        })
-}
+//             document.body.innerHTML = output;
+//         })
+//         .catch(err => {
+//             console.log(err);
+//         })
+// }
