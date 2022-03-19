@@ -12,7 +12,10 @@ class easyHttp {
     post(url, data){
         return new Promise((resolve, reject) => {
             fetch(url, {
-                method: 'POST'
+                method: 'POST',
+                headers: {
+                    Content-type: 'application/json'
+                }
             })
         })
     }
