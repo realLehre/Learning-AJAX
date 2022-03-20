@@ -247,6 +247,7 @@ xhr.send();
 document.getElementById('button3').addEventListener('click', getExternal);
 
 function getExternal(user) {
+    console.log(1);
     output = '';
 
     output += `<li>${user.name}</li>`;
