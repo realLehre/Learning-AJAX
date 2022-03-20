@@ -223,7 +223,7 @@ function getExternal() {
             output = "";
 
             data.forEach(user => {
-                output += `<li>${}</li>`;
+                output += `<li>${user}</li>`;
             })
         })
 }
