@@ -235,9 +235,9 @@ const xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
 
 xhr.onload = () => {
-    if(this.status ===200{
+    if(this.status ===200){
         
-    })
+    }
 }
 
 xhr.send();
