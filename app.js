@@ -238,19 +238,21 @@ xhr.onload = function() {
     if(this.status ===200){
         const data = JSON.parse(this.responseText);
 
-        getExternal(data);
-    }
+        // const data = this.responseText;
+
+        document.getElementById('button3').addEventListener('click', getExternal);
+
+        function getExternal(user) {
+            console.log(user);
+            output = '';
+
+            output += `<li>${user}</li>`;
+            }
 
     // getExternal(data)
 }
 
 xhr.send();
 
-document.getElementById('button3').addEventListener('click', getExternal);
 
-function getExternal(user) {
-    console.log(user);
-    output = '';
-
-    output += `<li>${user}</li>`;
 }
