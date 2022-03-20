@@ -241,3 +241,9 @@ xhr.onload = function() {
 }
 
 xhr.send();
+
+document.getElementById('button3').addEventListener('click', getExternal);
+
+function getExternal() {
+    
+}
