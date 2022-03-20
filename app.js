@@ -211,21 +211,21 @@
 //         })
 // }
 
-const http = new Connect();
+// const http = new Connect();
 
 
 
-document.getElementById('button3').addEventListener('click', getExternal);
+// document.getElementById('button3').addEventListener('click', getExternal);
 
-function getExternal() {
-    http.get('https://jsonplaceholder.typicode.com/users')
-        .then(data => {
-            output = "";
+// function getExternal() {
+//     http.get('https://jsonplaceholder.typicode.com/users')
+//         .then(data => {
+//             output = "";
 
-            data.forEach(user => {
-                output += `<li>${user.name}</li>`;
-            })
+//             data.forEach(user => {
+//                 output += `<li>${user.name}</li>`;
+//             })
 
-            document.body.innerHTML = output;
-        })
-}
+//             document.body.innerHTML = output;
+//         })
+// }
