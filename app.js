@@ -279,3 +279,7 @@
 
 // foo()
 //     .then(res => console.log(res));
+
+async function getUsers(){
+    
+}
