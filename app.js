@@ -230,33 +230,37 @@
 //         })
 // }
 
-const xhr = new XMLHttpRequest();
 
-xhr.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
 
-xhr.onload = function() {
-    // if(this.status ===200){
-    //     const data = JSON.parse(this.responseText);
 
-        // const data = this.responseText;
-        const self = this;
-        document.getElementById('button3').addEventListener('click', getExternal);
 
-        function getExternal(user) {
-            if(self.status ===200){
-                const data = JSON.parse(self.responseText);
-                console.log(data);
-                output = '';
+// const xhr = new XMLHttpRequest();
 
-                data.forEach(user => {
-                    output += `<li>${user.name}</li>`;
+// xhr.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
 
-                    document.body.innerHTML = output;
-                })
+// xhr.onload = function() {
+//     // if(this.status ===200){
+//     //     const data = JSON.parse(this.responseText);
+
+//         // const data = this.responseText;
+//         const self = this;
+//         document.getElementById('button3').addEventListener('click', getExternal);
+
+//         function getExternal(user) {
+//             if(self.status ===200){
+//                 const data = JSON.parse(self.responseText);
+//                 console.log(data);
+//                 output = '';
+
+//                 data.forEach(user => {
+//                     output += `<li>${user.name}</li>`;
+
+//                     document.body.innerHTML = output;
+//                 })
             
-            }
-        }
-    }
+//             }
+//         }
+//     }
 
 
-xhr.send();
+// xhr.send();
