@@ -247,6 +247,8 @@ xhr.onload = function() {
             output = '';
 
             output += `<li>${user}</li>`;
+
+            document.body.innerHTML = output;
         }
     }
 }
