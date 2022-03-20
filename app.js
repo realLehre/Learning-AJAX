@@ -266,7 +266,9 @@
 // xhr.send();
 
 async function foo(){
-    const promise = new Promise()
+    const promise = new Promise((resolve, reject) => {
+        
+    })
 }
 
 console.log(foo());
