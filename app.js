@@ -236,7 +236,7 @@ xhr.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
 
 xhr.onload = function() {
     if(this.status ===200){
-        console.log(responseText);
+        console.log(this.responseText);
     }
 }
 
