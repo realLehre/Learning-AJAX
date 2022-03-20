@@ -240,6 +240,8 @@ xhr.onload = function() {
 
         getExternal(data);
     }
+
+    // getExternal(data)
 }
 
 xhr.send();
