@@ -266,7 +266,7 @@
 // xhr.send();
 
 async function foo(){
-    return 'Hello'
+    const promise = new Promise()
 }
 
 console.log(foo());
