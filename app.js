@@ -281,5 +281,9 @@
 //     .then(res => console.log(res));
 
 async function getUsers(){
-    
+    const response = await fetch('https://jsonplaceholder.typicode.com/users');
+
+    const data = response.json();
 }
+
+console.log(getUsers());
