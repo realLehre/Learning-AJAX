@@ -265,7 +265,7 @@
 
 // xhr.send();
 
-function foo(){
+async function foo(){
     return 'Hello'
 }
 
