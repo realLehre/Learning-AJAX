@@ -211,15 +211,3 @@
 //         })
 // }
 
-const http = new easyHttp();
-
-// http.get('https://jsonplaceholder.typicode.com/users')
-//     .then(data => console.log(data))
-
-user = {
-    'name': 'James Thompson',
-    'email': 'JamesT@yahoo.mail'
-}
-
-http.post('https://jsonplaceholder.typicode.com/users', user)
-    .then(data => console.log(data))
