@@ -239,13 +239,13 @@ xhr.onload = function() {
     //     const data = JSON.parse(this.responseText);
 
         // const data = this.responseText;
-
+        const self = this;
         document.getElementById('button3').addEventListener('click', getExternal);
 
         function getExternal(user) {
-            if(this.status ===200){
-                const data = JSON.parse(this.responseText);
-
+            if(self.status ===200){
+                const data = JSON.parse(self.responseText);
+                console.log(data);
                 output = '';
 
                 data.forEach(user => {
