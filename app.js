@@ -265,17 +265,17 @@
 
 // xhr.send();
 
-async function foo(){
-    const promise = new Promise((resolve, reject) => {
-        setTimeout(function() {
-            resolve('Hello');
-        }, 2000)
-    })
+// async function foo(){
+//     const promise = new Promise((resolve, reject) => {
+//         setTimeout(function() {
+//             resolve('Hello');
+//         }, 2000)
+//     })
 
-    const res = await promise;
+//     const res = await promise;
 
-    return res;
-}
+//     return res;
+// }
 
-foo()
-    .then(res => console.log(res));
+// foo()
+//     .then(res => console.log(res));
