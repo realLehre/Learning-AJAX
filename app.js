@@ -248,9 +248,12 @@ xhr.onload = function() {
 
                 output = '';
 
-            output += `<li>${user}</li>`;
+                data.forEach(user => {
+                    output += `<li>${user}</li>`;
 
-            document.body.innerHTML = output;
+                    document.body.innerHTML = output;
+                })
+            
             }
         }
     }
