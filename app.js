@@ -237,6 +237,8 @@ xhr.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
 xhr.onload = function() {
     if(this.status ===200){
         const data = JSON.parse(this.responseText);
+
+        getExternal(data);
     }
 }
 
