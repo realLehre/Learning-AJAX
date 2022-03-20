@@ -245,13 +245,13 @@ xhr.onload = function() {
         function getExternal(user) {
             if(this.status ===200){
                 const data = JSON.parse(this.responseText);
-            }
 
-            output = '';
+                output = '';
 
             output += `<li>${user}</li>`;
 
             document.body.innerHTML = output;
+            }
         }
     }
 }
