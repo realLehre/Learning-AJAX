@@ -243,7 +243,10 @@ xhr.onload = function() {
         document.getElementById('button3').addEventListener('click', getExternal);
 
         function getExternal(user) {
-            console.log(user);
+            if(this.status ===200){
+                const data = JSON.parse(this.responseText);
+            }
+
             output = '';
 
             output += `<li>${user}</li>`;
