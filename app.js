@@ -232,4 +232,4 @@
 
 const xhr = new XMLHttpRequest();
 
-xhr.open()
+xhr.open('GET')
