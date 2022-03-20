@@ -247,5 +247,5 @@ document.getElementById('button3').addEventListener('click', getExternal);
 function getExternal() {
     output = '';
 
-    output += `<></>`
+    output += `<li></li>`;
 }
