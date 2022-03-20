@@ -235,8 +235,8 @@ const xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
 
 xhr.onload = function() {
-    if(this.status ===200){
-        const data = JSON.parse(this.responseText);
+    // if(this.status ===200){
+    //     const data = JSON.parse(this.responseText);
 
         // const data = this.responseText;
 
@@ -257,6 +257,6 @@ xhr.onload = function() {
             }
         }
     }
-}
+
 
 xhr.send();
