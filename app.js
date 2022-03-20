@@ -250,5 +250,5 @@ function getExternal(user) {
     console.log(1);
     output = '';
 
-    output += `<li>${user.name}</li>`;
+    output += `<li>${user}</li>`;
 }
