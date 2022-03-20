@@ -211,4 +211,6 @@
 //         })
 // }
 
-const http
+const http = new Connect();
+
+http.get('https://jsonplaceholder.typicode.com/users')
