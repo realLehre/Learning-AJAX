@@ -247,12 +247,8 @@ xhr.onload = function() {
             output = '';
 
             output += `<li>${user}</li>`;
-            }
-
-    // getExternal(data)
+        }
+    }
 }
 
 xhr.send();
-
-
-}
