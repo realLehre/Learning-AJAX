@@ -266,5 +266,7 @@
 // xhr.send();
 
 function foo(){
-    
+    return 'Hello'
 }
+
+console.log(foo());
