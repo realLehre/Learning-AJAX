@@ -268,11 +268,13 @@
 async function foo(){
     const promise = new Promise((resolve, reject) => {
         setTimeout(() => {
-            return 'Hello';
+            resolve('Hello');
         }, 2000)
     })
 
-    return promise;
+    const res = await promise;
+
+    return res;
 }
 
 console.log(foo());
