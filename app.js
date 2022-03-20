@@ -267,7 +267,7 @@
 
 async function foo(){
     const promise = new Promise((resolve, reject) => {
-        setTimeout(() => {
+        setTimeout(function() {
             resolve('Hello');
         }, 2000)
     })
@@ -277,4 +277,5 @@ async function foo(){
     return res;
 }
 
-console.log(foo());
+foo()
+    .then(res => console.log(res));
