@@ -268,7 +268,7 @@
 async function foo(){
     const promise = new Promise((resolve, reject) => {
         setTimeout(() => {
-            
+            return 'Hello';
         })
     })
 }
