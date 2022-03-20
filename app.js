@@ -264,3 +264,7 @@
 
 
 // xhr.send();
+
+function foo(){
+    
+}
