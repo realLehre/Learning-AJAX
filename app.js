@@ -229,3 +229,7 @@
 //             document.body.innerHTML = output;
 //         })
 // }
+
+const xhr = new XMLHttpRequest();
+
+xhr.open()
