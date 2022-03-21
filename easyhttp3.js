@@ -7,3 +7,5 @@ class easyHttp3{
         const res = await response.json();
     }
 }
+
+const http = new easyHttp3();
