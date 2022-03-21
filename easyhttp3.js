@@ -10,4 +10,4 @@ class easyHttp3{
 
 const http = new easyHttp3();
 
-http.get()
+http.get().then(data => console.log(data))
