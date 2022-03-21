@@ -289,3 +289,5 @@
 // }
 
 // getUsers().then(users => console.log(users));
+
+const http = new easyHttp3();
