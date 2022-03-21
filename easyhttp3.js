@@ -1,5 +1,5 @@
 class easyHttp3{
     async get(){
-        await fetch('https://jsonplaceholder.typicode.com/users')
+        await fetch('https://jsonplaceholder.typicode.com/users');
     }
 }
