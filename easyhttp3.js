@@ -9,3 +9,5 @@ class easyHttp3{
 }
 
 const http = new easyHttp3();
+
+http.get()
