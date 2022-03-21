@@ -4,6 +4,6 @@ class easyHttp3{
 
         console.log(response);
 
-        const res = await response.json();;
+        const res = await response.json();
     }
 }
